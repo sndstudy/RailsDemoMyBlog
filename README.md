@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## memo
+
+- rails server -b IPアドレス　-d
+    - サーバ起動
