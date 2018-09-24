@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   
   # ルーティング設定
   # rais routes でルーティング設定を確認できる
-  resources :posts
+  resources :posts do
+    resources :comments, only: [:create, :destroy]
+  end
 
   # ルート設定
   # ルートを設定をするとRoRの初期画面ではなく指定したページが開くようになる
